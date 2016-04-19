@@ -1,0 +1,37 @@
+#! /bin/sh
+# chkconfig: - 97 45
+export JAVA_HOME=/usr/lib/jvm/java
+start(){
+        echo "Starting jboss.."
+
+        su -l <%= @user %> -c '<%= @home %>/<%= @jboss_dir %>/bin/run.sh -c default -b <%= @ip %> &'
+}
+
+stop(){
+        echo "Stopping jboss.."
+
+        su -l <%= @user %> -c '<%= @home %>/<%= @jboss_dir %>/bin/shutdown.sh -s <%= @ip %> -u admin -p admin -S &' 
+}
+
+restart(){
+        stop
+        sleep 30
+        start
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+        restart
+        ;;
+  *)
+        echo "Usage: jboss {start|stop|restart}"
+        exit 1
+esac
+
+exit 0
