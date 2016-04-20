@@ -1,0 +1,11 @@
+{
+  "name": "application_repo",
+  "description": "application repo",
+  "default_attributes": {
+    "jboss": {
+      "download_app": "http://www.cumulogic.com/download/Apps/hudson.zip",
+      "app_zip": "hudson.zip",
+      "app": "hudson"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "jboss",
+  "description": "jboss with hudson",
+  "run_list": [
+    "recipe[jbosskf]"
+  ]
+}
