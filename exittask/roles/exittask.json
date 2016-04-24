@@ -1,0 +1,7 @@
+{
+  "name": "exittask",
+  "description": "exittask to weekends",
+  "run_list": [
+    "recipe[exittask]"
+  ]
+}
