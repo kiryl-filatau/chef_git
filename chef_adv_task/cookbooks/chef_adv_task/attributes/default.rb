@@ -1,0 +1,8 @@
+default['nginx']['nginx_port'] = '8080'
+default['jboss']['jboss_home'] = '/opt'
+default['jboss']['jboss_dir'] = 'jboss-5.1.0.GA'
+default['jboss']['tmp'] = '/tmp'
+default['jboss']['jboss_zip'] = 'jboss-5.1.0.GA.zip' 
+default['jboss']['version'] = '5.1.0'
+default['jboss']['download_url'] = 'http://sourceforge.net/projects/jboss/files/JBoss/JBoss-5.1.0.GA/jboss-5.1.0.GA.zip'
+default['jboss']['jboss_user'] = 'jboss'

@@ -1,0 +1,7 @@
+{
+  "name": "jboss_quantity",
+  "description": "quantity of jboss nodes",
+  "default_attributes": {
+     "quantity": 2
+   }
+}
