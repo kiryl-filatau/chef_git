@@ -1,0 +1,5 @@
+{
+  "name": "nginx",
+  "orgname": "chef",
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt+QfClC3/qA1vprykhN1\ntBZzqz/pY1YZ6Q/ZbW5Z7BY/NTw+Fx5F6qMLlRIcXYXgFQDEree6m9id96dV+Ger\nOprtaVieyZfpHg2YViE3NXspDjfiBB4SHi0spb2h6hBFKCGeikKGvHnZcIWSrQyM\n0tfclEuTZ4+udKTeUwG0jtEKeXGGIyFlKFqON7oIwJofwC9I1wA5XB8hbyKL9Tp4\nDkqmsj9IUNxuOMbv7Do0IRobq4ih75u+DmZtR3+x+yAUzboXem9beKoGWydVxeIk\nR4bPZYxoP4/pjdilACgwScK4q1iBGJmV+TtQ7tjgK4MasHOSUedBMBmJCU1HpkZh\nPQIDAQAB\n-----END PUBLIC KEY-----\n"
+}
