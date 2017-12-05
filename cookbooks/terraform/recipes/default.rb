@@ -10,12 +10,14 @@ package 'nginx' do
   action :install
 end
 
-template "/etc/nginx/nginx.conf" do
+template "/var/www/html/index.nginx-debian.html" do
   source "nginx.erb"
   mode "0644"
   owner "root"
   group "root"
-  variables({
-    'node_ip' => ip_range
-})
+end
+
+service "nginx" do
+  supports :restart => true, :start => true, :stop => true
+  action [ :enable, :start ]
 end
