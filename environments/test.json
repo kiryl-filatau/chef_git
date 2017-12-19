@@ -1,0 +1,6 @@
+{
+  "name": "test",
+  "cookbook_versions": {
+    "learn_chef_apache2": "= 0.4.1"
+  }
+}

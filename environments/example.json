@@ -1,0 +1,7 @@
+{
+  "name": "example",
+  "description": "This is an example environment defined as JSON",
+  "cookbook_versions": {
+    "example": "= 1.0.0"
+  }
+}
