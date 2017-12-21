@@ -1,0 +1,33 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: N_Virginia_filatko
+  region: us-east-1
+  availability_zone: a
+  subnet_id: subnet-aeec5481
+  instance_type: t2.micro
+  image_id: ami-c29e1cb8
+  security_group_ids: ["sg-d62732a3"]
+  retryable_tries: 120
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+
+verifier:
+  name: inspec
+
+transport:
+  ssh_key: /home/kfilatau/EPAM/LEARN/Amazon/keys/N_Virginia_filatko.pem
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[lamp::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
