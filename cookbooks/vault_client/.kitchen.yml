@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[vault::default]
+      - recipe[vault_client::default]
     verifier:
       inspec_tests:
         - test/smoke/default
